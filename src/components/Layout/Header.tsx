@@ -48,16 +48,6 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
             >
               Catálogo
             </button>
-            <button
-              onClick={() => onViewChange('info')}
-              className={`px-4 py-2 rounded-full transition-all ${
-                currentView === 'info'
-                  ? 'bg-white text-pink-500 shadow-md'
-                  : 'text-white hover:bg-white/10'
-              }`}
-            >
-              Información
-            </button>
           </nav>
 
           {/* User Actions */}
@@ -134,7 +124,7 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && !state.isLoggedIn && (
+        {isMenuOpen && (
           <nav className="md:hidden mt-4 pt-4 border-t border-white/20">
             <div className="flex flex-col space-y-2">
               <button
@@ -149,19 +139,6 @@ export const Header: React.FC<HeaderProps> = ({ currentView, onViewChange }) => 
                 } transition-colors`}
               >
                 Catálogo
-              </button>
-              <button
-                onClick={() => {
-                  onViewChange('info');
-                  setIsMenuOpen(false);
-                }}
-                className={`text-left px-4 py-2 rounded ${
-                  currentView === 'info'
-                    ? 'bg-white text-pink-500'
-                    : 'text-white hover:bg-white/10'
-                } transition-colors`}
-              >
-                Información
               </button>
             </div>
           </nav>

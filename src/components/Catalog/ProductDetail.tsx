@@ -197,13 +197,13 @@ export const ProductDetail: React.FC<ProductDetailProps> = ({ product, onBack })
               {/* Policies */}
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                  Políticas de Devolución
+                  Información Importante
                 </h3>
                 <ul className="text-gray-600 space-y-2 text-sm">
                   <li>• Devoluciones aceptadas dentro de 7 días</li>
-                  <li>• Productos en perfecto estado</li>
                   <li>• Flores frescas garantizadas por 5 días</li>
                   <li>• Floreros con garantía de 30 días</li>
+                  <li>• Envío gratuito en compras mayores a $50</li>
                 </ul>
               </div>
             </div>

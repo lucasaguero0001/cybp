@@ -50,11 +50,10 @@ export const CatalogView: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Nuestro Catálogo de Flores
+            Catálogo de Productos
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Descubre nuestra exquisita colección de flores frescas y floreros elegantes, 
-            perfectos para cualquier ocasión especial.
+            Descubre nuestra colección de flores frescas y floreros elegantes para cualquier ocasión.
           </p>
         </div>
 

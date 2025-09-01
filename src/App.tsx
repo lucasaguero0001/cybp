@@ -8,9 +8,8 @@ import { CartView } from './components/Cart/CartView';
 import { CheckoutView } from './components/Checkout/CheckoutView';
 import { ProfileView } from './components/Profile/ProfileView';
 import { AdminView } from './components/Admin/AdminView';
-import { InfoView } from './components/Info/InfoView';
 
-type View = 'auth' | 'catalog' | 'cart' | 'checkout' | 'profile' | 'admin' | 'info';
+type View = 'auth' | 'catalog' | 'cart' | 'checkout' | 'profile' | 'admin';
 
 function AppContent() {
   const [currentView, setCurrentView] = useState<View>('catalog');
@@ -56,12 +55,6 @@ function AppContent() {
           <>
             <AdminView />
             <Footer />
-          </>
-        );
-      case 'info':
-        return (
-          <>
-            <InfoView />
           </>
         );
       default:
